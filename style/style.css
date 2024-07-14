@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+  font-family: "Lato", sans-serif;
+}
+
+/* shared style */
+.primary-btn{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  border-radius: 8px;
+  background-color: rgb(229, 84, 115);
+  padding: 20px 43px;
+  border: none;
+}
+
+/* header section style */
+.header{
+  background: rgba(229, 84, 115, 0.1);
+  padding: 0 240px;
+}
+.banner{
+  max-width: 1920px;
+  gap: 97px;
+  display: flex;
+}
+.banner-content{
+ margin-top: 197px;
+  
+  
+}
+.banner-content h1{
+  max-width: 708px;
+  color: rgb(39, 39, 39);
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 96px;
+  margin-bottom: 32px;
+ 
+}
+.banner-content p{
+  max-width: 708px;
+  color: rgba(39, 39, 39, 0.6);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 32px;
+ 
+}
+
+.banner-image-container{
+  width: 635px;
+  height: 800px;
+  margin-top: 50px;
+}
+.banner-image-container img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+  .banner{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .banner-content{
+    margin-top: 10px;
+  }
+  .header{
+    padding: 10px;
+  }
+  .banner-image-container img{
+    width: 60%;
+    height: 60%;
+    
+  }
+}
